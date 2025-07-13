@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update Hyperlink</title>
+  </head>
+  <body>
+    <h1>Update Hyperlink</h1>
+    <form method="POST" action="{{ url_for('update_hyperlink') }}">
+      <label for="letter">Letter:</label>
+      <input type="text" id="letter" name="letter"><br><br>
+      <label for="hyperlink">Hyperlink:</label>
+      <input type="text" id="hyperlink" name="hyperlink"><br><br>
+      <input type="submit" value="Update Hyperlink">
+    </form>
+  </body>
+</html>

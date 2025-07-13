@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Get Hyperlink</title>
+  </head>
+  <body>
+    <h1>Get Hyperlink</h1>
+    {% if message %}
+      <p>{{ message }}</p>
+    {% endif %}
+    <form method="POST" action="/get_hyperlink">
+      <label for="letter">Enter a letter:</label>
+      <input type="text" id="letter" name="letter">
+      <button type="submit">Submit</button>
+    </form>
+    {% if hyperlink %}
+      <p>The hyperlink for letter '{{ letter }}' is: <a href="{{ hyperlink }}">{{ hyperlink }}</a></p>
+    {% endif %}
+  </body>
+</html>
